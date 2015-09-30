@@ -1,2 +1,4 @@
 # irssi-log-simulator
-Markov text generator that uses Irssi log files as a source
+Markov text generator that uses Irssi log files as a source.
+
+Still work in progress. Documentation coming soon.
