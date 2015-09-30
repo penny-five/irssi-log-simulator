@@ -1,5 +1,5 @@
 {
-  "name": "Irssi Log Simulator server",
+  "name": "irssi-log-simulator-server",
   "version": "0.0.1",
   "description": "Server for Irssi Log Simulator",
   "main": "server.js",
