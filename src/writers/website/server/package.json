@@ -1,0 +1,17 @@
+{
+  "name": "Irssi Log Simulator server",
+  "version": "0.0.1",
+  "description": "Server for Irssi Log Simulator",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joonas Lehtonen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "fs-extra": "^0.24.0",
+    "sqlite3": "^3.1.0"
+  }
+}

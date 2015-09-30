@@ -1,0 +1,20 @@
+{
+  "name": "irssi-log-simulator",
+  "version": "0.0.1",
+  "description": "Markov text generator that uses Irssi log files as a source",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joonas Lehtonen",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^5.8.23",
+    "fs-extra": "^0.24.0",
+    "sqlite3": "^3.1.0",
+    "yargs": "^3.25.0"
+  },
+  "devDependencies": {
+    "eslint": "^1.5.1"
+  }
+}
