@@ -1,6 +1,6 @@
 {
   "name": "irssi-log-simulator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Markov text generator that uses Irssi log files as a source",
   "main": "index.js",
   "scripts": {
