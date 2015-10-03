@@ -7,14 +7,12 @@ export default class KeyMap {
 
 	constructor() {
 		this.values = new Map();
-		this.keys = [];
+		this.occurances = [];
 	}
 
 	set(key, value) {
-		if (!this.values.has(key)) {
-			this.keys.push(key);
-		}
 		this.values.set(key, value);
+		this.occurances.push(key);
 		return this;
 	}
 
@@ -23,14 +21,14 @@ export default class KeyMap {
 	}
 
 	isEmpty() {
-		return this.keys.length == 0;
+		return this.occurances.length == 0;
 	}
 
 	getRandomValue() {
-		if (this.keys.length == 0) {
+		if (this.occurances.length == 0) {
 			return undefined;
 		}
-		const randomKey = this.keys[randomIntBetween(0, this.keys.length)];
+		const randomKey = this.occurances[randomIntBetween(0, this.occurances.length)];
 		return this.values.get(randomKey);
 	}
 }

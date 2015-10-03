@@ -62,6 +62,7 @@ export default class LogGenerator {
 			generatedMessages++;
 		}
 	}
+	
 	/**
 	 * Generate a random message using lines that were fed with feedline()
 	 * @param  {Number} maxLength
