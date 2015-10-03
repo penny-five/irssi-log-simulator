@@ -1,4 +1,4 @@
-import KeyMap from './KeyMap';
+import CountingMap from './CountingMap';
 
 /**
  * A state in state space.
@@ -7,7 +7,7 @@ export default class State {
 
 	constructor(name) {
 		this.name = name;
-		this.connectedStates = new KeyMap();
+		this.connectedStates = new CountingMap();
 	}
 
 	/**

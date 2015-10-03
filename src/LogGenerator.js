@@ -1,4 +1,4 @@
-import KeyMap from './KeyMap';
+import CountingMap from './CountingMap';
 import State from './State';
 
 /**
@@ -10,8 +10,8 @@ const MATCH_MESSAGE = /\d{2}:\d{2} <.[^ ]*> /;
 export default class LogGenerator {
 
 	constructor() {
-		this.states = new KeyMap();
-		this.usernames = new KeyMap();
+		this.states = new CountingMap();
+		this.usernames = new CountingMap();
 	}
 
 	/**
@@ -62,7 +62,7 @@ export default class LogGenerator {
 			generatedMessages++;
 		}
 	}
-	
+
 	/**
 	 * Generate a random message using lines that were fed with feedline()
 	 * @param  {Number} maxLength
