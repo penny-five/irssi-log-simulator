@@ -1,9 +1,12 @@
 import { randomIntBetween } from './Utils';
 
 /**
- * Wrapper around Map that adds support for fetching random map value.
+ * Wrapper around Map that adds support for fetching random map values.
+ *
+ * Tracks how many times each key is set. Probability for a value to be returned from
+ * getRandomValue() increases each time it is added to the map.
  */
-export default class KeyMap {
+export default class CountingMap {
 
 	constructor() {
 		this.values = new Map();
